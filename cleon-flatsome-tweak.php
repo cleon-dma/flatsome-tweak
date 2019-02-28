@@ -15,6 +15,7 @@ Author URI: http://leduyquang.com
 /**Remove MENU */
 function cleon_remove_flatsome_menu() {
     remove_menu_page( 'flatsome-panel' );
+    remove_submenu_page( 'themes.php', 'tgmpa-install-plugins' );
 }
 add_action( 'admin_menu', 'cleon_remove_flatsome_menu', 999 );
 
